@@ -28,6 +28,7 @@ class GraphicsmagickPerl < Formula
   skip_clean :la
 
   def install
+    ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
     args = %W[
       --prefix=#{prefix}
       --with-perl
