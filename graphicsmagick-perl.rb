@@ -34,7 +34,7 @@ class GraphicsmagickPerl < Formula
       --with-perl
       --disable-dependency-tracking
       --disable-openmp
-      --disable-static
+      --enable-static
       --enable-shared
       --with-modules
       --with-quantum-depth=16
