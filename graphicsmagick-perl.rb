@@ -49,7 +49,7 @@ class GraphicsmagickPerl < Formula
     inreplace "configure", "${PACKAGE_NAME}-${PACKAGE_VERSION}", "${PACKAGE_NAME}"
     system "./configure", *args
     system "make", "install"
-    system "make", "install-exec-perl"
+    system "make", "DESTDIR=${HOMEBREW_FORMULA_PREFIX}", "install-exec-perl"
   end
 
   test do
